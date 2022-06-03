@@ -1,6 +1,9 @@
 # Programming-Projects
-Everything here is written in C programming.
 
-Udemy folder contains all the challenges I did while learning C programming. 
+I majored in Computer Science at UWRF. We were taught how to code in Java. I took this opportunity to write my assignments in different languages. So far I've written some of the assignments in C and in Python. I haven't finished writing the assignments in different languages but I've gotten somewhat kind of far. I hope to finish them soon.
 
-Programs folder contains all the assignments from UWRF that were supposed to be written in Java. I decided to write them in C to get a better understanding of C.
+Java Folder contains Java Programming files.
+
+C Folder contains C Programming files.
+
+Python Folder contains Python Programming files.
