@@ -10,8 +10,7 @@
  */
 #include <stdio.h>
 
-void main()
-{
+int main(){
     char state[] = "Minnesota";
     char country[] = "United States";
     char lakes[] = "the Land of 10,000 Lakes";
@@ -38,4 +37,5 @@ void main()
     state, firstHigh, temp, negDegrees, feb, secHigh, temp, Moorhead);
 
     printf("\n%s has a progressive income tax structure; the four brackets of state income tax rates are %0.2f, %0.2f, %0.2f and %0.2f percent.", state, rate1 ,rate2, rate3, rate4);
+    return 0;
 }
