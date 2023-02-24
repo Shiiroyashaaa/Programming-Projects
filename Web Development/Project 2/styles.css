@@ -1,0 +1,20 @@
+    /*
+    Murfeesboro Regional Soccer League style sheet
+    Filename:style.css
+
+    Author: Steven Vang
+    Date: 9/27/2019
+    HTML 5 and CSS3 Illustrated Unit C, Independent Challenge 2
+    */
+
+header{
+    background-color:orange;
+}
+header, article{
+    text-align: center;
+}
+footer{
+    background-color:green;
+    color: white;
+    text-align: right;
+}
