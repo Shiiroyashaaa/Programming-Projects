@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+    
+<body>
+  <p>Enter the amount of the mortgage, change the yearly interests rate in percentage
+    (e.g., 8.5% = 8.5) if you are quoted a different rate, and select 
+    Length of loan in number of years. Click the "calculate" button to view the monthly payment. 
+    Click the "Reset" button to clear the form. For person and business loans there will be a $1000.00 and 
+    $500.00 origination fees that will be included in monthly payments. 
+    There is no origination fees for education loans.
+  </p>
+    
+  <form id="fincalc">
+      
+    <fieldset>
+        <legend>Type of loan:</legend>
+        <label for="per">
+            Personal ($1000.00 origination fee)
+            <input type="radio" id="per" name="TOL" value="Personal" checked>
+        </label>
+        <label for="bus">
+            Business ($500.00 origination fee)
+            <input type="radio" id="bus" name="TOL" value="Business">
+        </label>
+        <label for="edu">
+            Education
+            <input type="radio" id="edu" name="TOL" value="Education">
+        </label>
+    </fieldset>
+      
+    <fieldset id="cssLoanAmount">
+        <legend> Loan Amount:</legend>
+            <input type="text" id="la" name="la">
+    </fieldset>
+    
+    <fieldset id="cssInterestRate">
+        <legend>Interest rate IN decimal (e.g..,8.5% = 8.5)</legend>
+            <input type="text" id="ir" name="ir" placeholder="7.5">
+    </fieldset>
+    
+    <fieldset>
+        <legend>Length of loan in years</legend>
+            <select>
+                <option value="5" class="option" selected>5</option>
+                <option value="10" class="option">10</option>
+                <option value="15" class="option">15</option>
+                <option value="20" class="option">20</option>
+                <option value="25" class="option">25</option>
+                <option value="30" class="option">30</option>
+            </select>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Full time student:</legend>
+            <label for="fts">
+                <input type="checkbox" id="fts" name="fts">
+                (get 1% rate discount)
+            </label>
+    </fieldset>
+    
+    <fieldset>
+        <label id="cssCMPbutton">
+   	        <input type="button" name="cmp" value="Calculate Monthly Payments" onclick="showVal()"/>
+   	    </label>
+   	    <label id="cssReloadbutton">
+   	        <input type="button" name="Reload" value="Reload" onclick="Reloadfunction()"/>
+   	    </label>
+    </fieldset>
+      
+    <fieldset>
+        <legend id="cssMPA">Monthly Payment Amount</legend>
+   	    <input type="text" name="mpa" id="mpa" onclick="showVal()">
+    </fieldset>
+      
+    <fieldset>
+        <legend id="cssTPA">Total Payment Amount</legend>
+   	    <input type="text" name="tpa" id="tpa" onclick="showVal()">
+    </fieldset>
+    
+  </form>
+      
+</body>
+</html>
